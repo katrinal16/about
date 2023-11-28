@@ -27,7 +27,7 @@
 
         /* Style for the navigation bar */
         #nav {
-            position: fixed;
+            position: absolute;
             top: 30px; /* Align to the top */
             right: 20px; /* Align to the right */
             padding: 10px; /* Add some padding for better visibility */
@@ -48,22 +48,26 @@
             text-decoration: none;
             color: #6c584b;
         }
+      
+       li a:hover {
+        text-decoration: underline;
+         color: #d4a373;
+      }
 
         /* Style for the images */
-       img {
+       #pictures img {
     max-width: 100%;
     height: auto;
     margin: 10px 50px; /* Reduce the margin on the sides */
     width: 300px;
-    padding-top: 60px;
+    padding-top: 100px;
 }
-
-
-        /* Display images horizontally */
-        #wrapper img {
-            display: inline-block;
+      #logo img {
+            position: absolute; /* Set the position of the image to absolute */
+            top: 0px; /* Align to the top */
+            left: 30px; /* Align to the left */
+            margin-top: 30px; /* Add some margin for better spacing */
         }
-
     </style>
 </head>
 
@@ -78,11 +82,16 @@
             </ul>
         </div>
 
+      <div id="pictures">
         <img src="Me.jpg" alt="Picture of me">
         <img src="Family.jpg" alt="My family">
         <img src="Tofu.jpg" alt="My dog Tofu">
-
-    </div>
+      </div>
+      
+      <div id="logo">
+         <img src="personal_logo.png" alt="Personal Logo" width="73.7926" height="74.1448">
+      </div>
+      </div>
 </body>
 
 </html>
