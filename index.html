@@ -14,10 +14,11 @@
             margin: 0; /* Remove default margin */
         }
 
-        #wrapper {
-            max-width: 940px; 
-            margin: 30px 30px 30px 30px; 
-        }
+      #wrapper {
+        max-width: 1400px;
+        margin: 30px auto 0; /* Remove top margin and keep bottom margin only */
+        text-align: center;
+      }
 
         h1 {
             font-family: "Abril Fatface", serif;
@@ -26,7 +27,7 @@
 
         /* Style for the navigation bar */
         #nav {
-            position: fixed; 
+            position: fixed;
             top: 30px; /* Align to the top */
             right: 20px; /* Align to the right */
             padding: 10px; /* Add some padding for better visibility */
@@ -48,19 +49,21 @@
             color: #6c584b;
         }
 
-        .gallery {
-          
-            position: relative;
-            margin-bottom: 30px;
+        /* Style for the images */
+       img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 50px; /* Reduce the margin on the sides */
+    width: 300px;
+    padding-top: 60px;
+}
+
+
+        /* Display images horizontally */
+        #wrapper img {
+            display: inline-block;
         }
 
-        .gallery img {
-            width: 100%; /* Make the images fill the container */
-            max-width: 300px; /* Set a maximum width for the images */
-            margin-bottom: 10px; /* Add some margin between the images */
-          position: relative;
-          top: 20px;
-        }
     </style>
 </head>
 
@@ -75,13 +78,10 @@
             </ul>
         </div>
 
-        <!-- Add a div for the gallery -->
-        <div class="gallery">
-            <img src="Me.jpg" alt="Picture of me">
-            <img src="Family.jpg" alt="My family">
-            <img src="Tofu.jpg" alt="My dog Tofu">
-        </div>
-      
+        <img src="Me.jpg" alt="Picture of me">
+        <img src="Family.jpg" alt="My family">
+        <img src="Tofu.jpg" alt="My dog Tofu">
+
     </div>
 </body>
 
